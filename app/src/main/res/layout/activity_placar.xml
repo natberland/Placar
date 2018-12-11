@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacarActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="28dp"
+        android:text="Time A"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlacarTimeA"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="27dp"
+        android:text="Time B"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlacarTimeB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlacarTimeA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginStart="99dp"
+        android:text="0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt3pontostimeA"
+        app:layout_constraintEnd_toStartOf="@+id/tvPlacarTimeB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeA" />
+
+    <TextView
+        android:id="@+id/tvPlacarTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="106dp"
+        android:text="0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt3pontostimeB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPlacarTimeA"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeB" />
+
+    <Button
+        android:id="@+id/bt3pontostimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="4dp"
+        android:text="3 PONTOS"
+        app:layout_constraintBottom_toTopOf="@+id/bt2pontostimeA"
+        app:layout_constraintEnd_toStartOf="@+id/bt3pontostimeB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarTimeA" />
+
+    <Button
+        android:id="@+id/bt3pontostimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="3dp"
+        android:text="3 PONTOS"
+        app:layout_constraintBottom_toTopOf="@+id/bt2pontostimeB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt3pontostimeA"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarTimeB" />
+
+    <Button
+        android:id="@+id/bt2pontostimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="13dp"
+        android:text="2 PONTOS"
+        app:layout_constraintBottom_toTopOf="@+id/bt1pontotimeA"
+        app:layout_constraintEnd_toStartOf="@+id/bt2pontostimeB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt3pontostimeA" />
+
+    <Button
+        android:id="@+id/bt2pontostimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="9dp"
+        android:text="2 PONTOS"
+        app:layout_constraintBottom_toTopOf="@+id/bt1pontotimeB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt2pontostimeA"
+        app:layout_constraintTop_toBottomOf="@+id/bt3pontostimeB" />
+
+    <Button
+        android:id="@+id/bt1pontotimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="13dp"
+        android:text="1 PONTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt1pontotimeB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2pontostimeA" />
+
+    <Button
+        android:id="@+id/bt1pontotimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="9dp"
+        android:text="1 PONTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt1pontotimeA"
+        app:layout_constraintTop_toBottomOf="@+id/bt2pontostimeB" />
+
+    <Button
+        android:id="@+id/btReinciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="22dp"
+        android:text="Reiniciar"
+        app:layout_constraintEnd_toStartOf="@+id/bt1pontotimeB"
+        app:layout_constraintTop_toBottomOf="@+id/bt1pontotimeA" />
+
+</android.support.constraint.ConstraintLayout>
